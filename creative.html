@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Brandon's Resume</title>
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+   <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+</head>
+
+<style>
+   body {
+      margin: 0px;
+      padding: 0px;
+      width: 8.5in;
+      height: 11in;
+      font-family: 'Open Sans', sans-serif;
+   }
+   p {
+      display: block;
+   }
+   @media print {
+      .blue {
+         color: rgb(95, 188, 222) !important;
+         -webkit-print-color-adjust: exact;
+      }
+      .blue:before {
+         color: rgb(95, 188, 222) !important;
+         -webkit-print-color-adjust: exact;
+      }
+      #name, #contact {
+         color: white !important;
+         -webkit-print-color-adjust: exact;
+      }
+      .boxed-title {
+         color: white !important;
+         background: rgb(236, 134, 5) !important;
+         -webkit-print-color-adjust: exact;
+      }
+      #footer {
+         background: rgb(236, 134, 5) !important;
+         -webkit-print-color-adjust: exact;
+      }
+      #footer * {
+         color: white !important;
+         -webkit-print-color-adjust: exact;
+      }
+      #footer *:before {
+         color: white !important;
+         -webkit-print-color-adjust: exact;
+      }
+   }
+   #name {
+      position: absolute;
+      top: 81px;
+      left: 270px;
+      color: white;
+      font-weight: normal;
+   }
+   #contact {
+      position: absolute;
+      top: 155px;
+      left: 272px;
+      color: white;
+   }
+   #banner {
+      margin-top: 3px;
+   }
+   #qr {
+      position: absolute;
+      top: 0px;
+      left: 743px;
+      width: 87px;
+   }
+   .blue {
+      color: rgb(95, 188, 222);
+   }
+   #github {
+      position: absolute;
+      top: 19px;
+      left: 270px;
+      font-size: 50px;
+   }
+   #github-text {
+      position: absolute;
+      top: 35px;
+      left: 320px;
+      font-size: 12px;
+   }
+   #linkedin {
+      position: absolute;
+      top: 19px;
+      left: 500px;
+      font-size: 50px;
+   }
+   #linkedin-text {
+      position: absolute;
+      top: 35px;
+      left: 550px;
+      font-size: 12px;
+   }
+   #quote {
+      position: absolute;
+      top: 195px;
+      left: 285px;
+      width: 500px;
+   }
+   #titles .container {
+      margin-top: 5px;
+      padding-left: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+   .flex-between {
+      display: flex;
+      justify-content: space-between;
+      width:100%;
+   }
+   .boxed-title {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 100%;
+      background: rgb(236, 134, 5);
+      color: white;
+      text-align: center;
+      margin-bottom: 10px;
+   }
+   .col-4 {
+      width: 225px;
+      display: inline-block;
+      float: left;
+   }
+   .col-8 {
+      width: 525px;
+      display: inline-block;
+      float: left;
+   }
+   .heading {
+      width: 100%;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+   }
+   .depadded {
+      padding-left: 0px;
+      padding-right: 0px;
+   }
+   .depadded-left {
+      padding-left: 0px;
+      padding-right: 7.5px;
+   }
+   .depadded-right {
+      padding-left: 7.5px;
+      padding-right: 0px;
+   }
+   #footer {
+      margin-top: 10px;
+      background: rgb(236, 134, 5);
+      height: 106px;
+   }
+   #footer span {
+      display: inline-block;
+      float: left;
+   }
+</style>
+
+<body>
+   <div class="row">
+      <img id="banner" class="img-responsive" src="./resume-banner.png"/>
+      <img id="qr" class="img-responsive" src="./qr_code.jpg"/>
+      <i id="github" class="fa fa-github-square blue"></i>
+      <p id="github-text">https://github.com/14bmkelley</p>
+      <i id="linkedin" class="fa fa-linkedin-square blue"></i>
+      <p id="linkedin-text">https://linkedin.com/in/14bmkelley</p>
+      <h2 id="name">Brandon Kelley</h2>
+      <p id="contact">(360) 320-7728 &bull; bkelle05@calpoly.edu
+         &bull; http://brandonmkelley.com</p>
+      <p id="quote" style="text-align:justify"><em>"The ultimate promise of
+         technology is to make us master of a world that we command by the
+         push of a button."</em>
+         <span style="display: inline-block; width: 5px"></span>
+         ~ Volker Grassmuck</p>
+   </div>
+   <div id="titles" class="row">
+      <div class="container">
+         <div class="col-4">
+            <div class="boxed-title">
+               SKILLS &amp; ABILITIES
+            </div>
+            <div class="container-fluid depadded">
+               <p class="heading">Fields of Knowledge</p>
+               <div class="container-fluid">
+                  <p>Web Services <span class="pull-right text-right">&bull;
+                     &bull; &bull; &bull; &bull;</span></p>
+                  <p>Data Science <span class="pull-right text-right">&bull;
+                     &bull; &bull; &bull;</span></p>
+                  <p>Speech Recognition <span class="pull-right text-right">
+                     &bull; &bull; &bull; &bull;</span></p>
+                  <p>Machine Learning <span class="pull-right text-right">
+                     &bull; &bull; &bull;</span></p>
+               </div>
+               <p class="heading">Development Tools</p>
+               <div class="container-fluid">
+                  <p>Unix Terminal <span class="pull-right text-right">
+                     &bull; &bull; &bull; &bull; &bull;</span></p>
+                  <p>GitHub <span class="pull-right text-right">&bull;
+                     &bull; &bull; &bull; &bull;</span></p>
+                  <p>Visual Studio <span class="pull-right text-right">
+                     &bull; &bull; &bull; &bull;</span></p>
+                  <p>Postman <span class="pull-right text-right">&bull;
+                     &bull; &bull; &bull;</span></p>
+               </div>
+               <p class="heading">Server Tools</p>
+               <div class="container-fluid">
+                  <p>Node.js + Express <span class="pull-right text-right">
+                     &bull; &bull; &bull; &bull; &bull;</span></p>
+                  <p>Django <span class="pull-right text-right">
+                     &bull; &bull; &bull; &bull;</i></span>
+                  <p>ASP.NET MVC <span class="pull-right text-right">
+                     &bull; &bull; &bull;</span></p>
+                  <p>MongoDB <span class="pull-right text-right">
+                     &bull; &bull; &bull; &bull; &bull;</span></p>
+                  <p>MySQL <span class="pull-right text-right">
+                     &bull; &bull; &bull; &bull;</span></p>
+               </div>
+               <p class="heading">Notable Projects</p>
+               <div class="container-fluid">
+                  <p>Speech detection wearable</span></p>
+                  <p>LZW compression</span></p>
+                  <p>Hackathon API design</span></p>
+               </div>
+            </div>
+         </div>
+         <div class="col-8">
+            <div class="boxed-title">
+               PROFESSIONAL EXPERIENCE
+            </div>
+            <div class="col-xs-6 depadded-left">
+               <p class="heading">Current Position</p>
+               <div class="container-fluid">
+                  <p><span class="blue">Web Developer</span>
+                     <span class="pull-right text-right">Cal Poly SLO
+                        </span></p>
+                  <p style="text-align:justify">Designed and updated
+                     website content for multiple Cal Poly marketing
+                     subdomains, including contributions to a new 
+                     template.</p>
+               </div>
+               <p class="heading">Previous Positions</p>
+               <div class="container-fluid">
+                  <p><span class="blue">Research Intern</span>
+                     <span class="pull-right text-right">Microsoft
+                        </span></p>
+                  <p style="text-align:justify">Designed and implemented
+                     a new framework to collect speech-to-text data from
+                     unskilled workers, resulting in higher quality results
+                     with less ambiguity.</p>
+                  <p><span class="blue">Software Developer</span>
+                     <span class="pull-right text-right">Microcon Inc.
+                        </span></p>
+                  <p style="text-align:justify">Created new tools for
+                     businesses that use POS and merchandising software
+                     systems.</p>
+                  <p><span class="blue">Software Developer</span>
+                     <span class="pull-right text-right">IATPP
+                        </span></p>
+                  <p style="text-align:justify">Researched methods for
+                     obtaining accurate speech transcriptions on a
+                     crowd-based tool.</p>
+                  <p><span class="blue">Mobile Eng. Intern</span>
+                     <span class="pull-right text-right">Haberdashion
+                        </span></p>
+                  <p style="text-align:justify">Implemented a mobile
+                     application front end, written in Titanium, from
+                     designs and previous work.</p>
+               </div>
+            </div>
+            <div class="col-xs-6 depadded-right">
+               <p class="heading">Education</p>
+               <div class="container-fluid">
+                  <p><span class="blue">Cal Poly SLO</span>
+                     <br>BS in Computer Engineering
+                     <br>Expected Grad Date: <span class="blue">
+                        June 2018</span></p>
+                  <p>&bull; Dean's List Recipient<br>
+                     &bull; Student TA and Grader</p>
+                  <p style="text-align:justify">As a member of multiple
+                     clubs on campus and an advocate for extra-curricular
+                     projects, I've used the opportunities
+                     offered by my school to impact those around me by
+                     raising the quality of education.</p>
+               </div>
+               <p class="heading">Project Teams</p>
+               <div class="container-fluid">
+                  <p><span class="blue">Webmaster</span>
+                     <span class="pull-right text-right">Sigma Phi Delta
+                        </span></p>
+                  <p style="text-align:justify">Led a team in developing
+                     a dynamic web application to support the
+                     organization's needs.</p>
+                  <p><span class="blue">Technical Lead</span>
+                     <span class="pull-right text-right">HackingEDU
+                        </span></p>
+                  <p style="text-align:justify">Managed content design and
+                     updates on the website as well as participated in
+                     sponsor scouting.</p>
+                  <p><span class="blue">Independent Development</span></p>
+                  <p style="text-align:justify">Worked with other students
+                     to explore emerging fields and technologies through
+                     targeted projects and competition.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="footer" class="row">
+      <div class="container-fluid" style="padding:19px 60px;color:white;">
+         <span><h3>Ask me about:</h3></span>
+         <span style="width: 500px; margin-top:5px; margin-left:60px;">
+            <div class="flex-between text-center">
+               <span><i class="fa fa-cloud" style="font-size:40px"></i>
+                  <br>Cloud Services/APIs</span>
+               <span><i class="fa fa-pencil-square-o"
+                  style="font-size:40px"></i>
+                  <br>Educational Technology</span>
+               <span><i class="fa fa-area-chart" style="font-size:40px">
+                  </i><br>Data Science</span>
+            </div>
+         </span>
+      </div>
+   </div>
+</body>
+
+</html>
